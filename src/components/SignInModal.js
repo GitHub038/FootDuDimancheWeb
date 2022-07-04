@@ -17,8 +17,6 @@ export default function SignInModal() {
     }
   };
 
-  const formRef = useRef();
-
   //async car on a utilisé await
   const handleForm = async (e) => {
     e.preventDefault(); // evite le comportement par défaut et l'envoi de données. Je vais gérer ça moi-même
