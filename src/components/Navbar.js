@@ -23,7 +23,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-light bg-light px-4">
+    <nav className="navbar navbar-light bg-success px-4">
       <Link to="/" className="navbar-brand">
         Foot du Dimanche
       </Link>
