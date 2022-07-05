@@ -51,10 +51,10 @@ export default function SignInModal() {
     <>
       {modalState.signInModal && (
         <div className="position-fixed top-0 vw-100 vh-100">
-          <div
+          {/* <div
             onClick={closeModal}
             className="w-100 h-100 bg-dark bg-opacity-75"
-          ></div>
+          ></div> */}
           <div
             className="position-absolute top-50 start-50 translate-middle"
             style={{ minWidth: "400px" }}
@@ -66,11 +66,7 @@ export default function SignInModal() {
                   <button onClick={closeModal} className="btn-close"></button>
                 </div>
                 <div className="modal-body">
-                  <form
-                    // ref={formRef}
-                    onSubmit={handleForm}
-                    className="sign-in-form"
-                  >
+                  <form onSubmit={handleForm} className="sign-in-form">
                     <div className="mb-3">
                       <label htmlFor="signInEmail" className="form-label">
                         Adresse mail
