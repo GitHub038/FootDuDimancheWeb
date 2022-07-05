@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase-config";
+import logo from "../images/logo.png";
 
 export default function Navbar() {
   const { toggleModals } = useContext(UserContext);
@@ -24,9 +25,16 @@ export default function Navbar() {
 
   return (
     <nav className="navbar navbar-light bg-success px-4">
-      <Link to="/" className="navbar-brand">
-        Foot du Dimanche
-      </Link>
+      <div>
+        <img src={logo} alt="" style={{ maxHeight: "40px" }} />
+        <Link
+          to="/"
+          className="navbar-brand text-light"
+          style={{ marginLeft: "10px" }}
+        >
+          Foot du Dimanche
+        </Link>
+      </div>
       <div>
         <button
           /* Fonction anonyme dans le onClick sinon elle va s'exécuter à chaque return*/
